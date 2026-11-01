@@ -2,8 +2,8 @@
 # Basic Operations and Variable Assignment
 # ==========================================
 
-a <- 20
-b <- 5
+a <- 24
+b <- 4
 
 addition <- a + b
 subtraction <- a - b
@@ -23,7 +23,7 @@ square_root
 # Numerical and Descriptive Functions
 # ==========================================
 
-marks <- c(45, 56, 67, 78, 89)
+marks <- c(48, 55, 68, 76, 91)
 
 log_value <- log10(100)
 total <- sum(marks)
@@ -42,7 +42,7 @@ summary_marks
 # Five-Number Summary
 # ==========================================
 
-marks <- c(35, 42, 50, 56, 61, 68, 72, 80, 85, 95)
+marks <- c(38, 44, 49, 58, 63, 67, 74, 81, 87, 94)
 
 summary(marks)
 
@@ -51,9 +51,9 @@ summary(marks)
 # ==========================================
 
 logical_value <- TRUE
-numeric_value <- 25.5
-integer_value <- 10L
-complex_value <- 3 + 2i
+numeric_value <- 28.5
+integer_value <- 15L
+complex_value <- 4 + 3i
 character_value <- "R Programming"
 
 logical_value
@@ -72,7 +72,7 @@ class(character_value)
 # Vectors
 # ==========================================
 
-marks <- c(50, 60, 70, 80, 90)
+marks <- c(52, 64, 71, 83, 92)
 
 marks
 
@@ -89,9 +89,9 @@ length(marks)
 # ==========================================
 
 student <- list(
-  name = "Rahul",
-  age = 20,
-  marks = c(75, 80, 85),
+  name = "Tariq",
+  age = 21,
+  marks = c(78, 83, 89),
   passed = TRUE
 )
 
@@ -120,9 +120,9 @@ sum(m)
 # ==========================================
 
 student <- data.frame(
-  Name = c("Amit", "Neha", "Rahul", "Priya"),
-  Age = c(20, 21, 20, 22),
-  Marks = c(75, 85, 65, 90)
+  Name = c("Bilal", "Alice", "Tariq", "Fatima"),
+  Age = c(21, 20, 22, 21),
+  Marks = c(72, 88, 68, 93)
 )
 
 student
@@ -136,9 +136,9 @@ mean(student$Marks)
 # ==========================================
 
 student <- data.frame(
-  Name = c("Amit", "Neha", "Rahul", "Priya"),
-  Age = c(20, 21, 20, 22),
-  Marks = c(75, 85, 65, 90)
+  Name = c("Bilal", "Alice", "Tariq", "Fatima"),
+  Age = c(21, 20, 22, 21),
+  Marks = c(72, 88, 68, 93)
 )
 
 student[1, ]
@@ -152,9 +152,9 @@ student[student$Marks > 75, ]
 # ==========================================
 
 student <- data.frame(
-  Name = c("Amit", "Neha", "Rahul"),
-  Age = c(20, 21, 20),
-  Marks = c(75, 85, 65)
+  Name = c("Bilal", "Alice", "Tariq"),
+  Age = c(21, 20, 22),
+  Marks = c(72, 88, 68)
 )
 
 student$Grade <- c("B", "A", "C")
@@ -169,8 +169,8 @@ student
 # Bar Graph
 # ==========================================
 
-marks <- c(75, 85, 65, 90, 80)
-students <- c("Amit", "Neha", "Rahul", "Priya", "Riya")
+marks <- c(78, 86, 68, 92, 84)
+students <- c("Zayn", "Aisha", "Bob", "Fatima", "John")
 
 barplot(marks,
         names.arg = students,
@@ -182,7 +182,7 @@ barplot(marks,
 # Pie Chart
 # ==========================================
 
-marks <- c(75, 85, 65, 90, 80)
+marks <- c(78, 82, 69, 94, 76)
 subjects <- c("Maths", "Science", "English",
               "Computer", "History")
 
@@ -194,8 +194,8 @@ pie(marks,
 # Histogram
 # ==========================================
 
-marks <- c(45, 50, 55, 60, 62, 65, 68,
-           70, 72, 75, 78, 80, 82, 85, 90)
+marks <- c(46, 52, 54, 58, 63, 67, 69,
+           71, 74, 77, 79, 83, 85, 88, 92)
 
 hist(marks,
      main = "Distribution of Marks",
@@ -206,7 +206,7 @@ hist(marks,
 # Line Graph
 # ==========================================
 
-sales <- c(100, 120, 150, 130, 170, 200)
+sales <- c(110, 125, 145, 135, 175, 210)
 months <- c("Jan", "Feb", "Mar",
             "Apr", "May", "Jun")
 
@@ -224,7 +224,7 @@ axis(1, at = 1:6, labels = months)
 # ==========================================
 
 hours <- c(1, 2, 3, 4, 5, 6, 7)
-marks <- c(40, 45, 55, 60, 65, 75, 85)
+marks <- c(42, 48, 53, 62, 68, 77, 86)
 
 plot(hours, marks,
      main = "Study Hours vs Marks",
@@ -236,8 +236,8 @@ plot(hours, marks,
 # Box Plot
 # ==========================================
 
-marks <- c(45, 50, 55, 60, 62,
-           65, 68, 70, 75, 80, 85, 90)
+marks <- c(46, 51, 56, 59, 64,
+           66, 69, 72, 76, 82, 86, 91)
 
 boxplot(marks,
         main = "Box Plot of Marks",
@@ -247,8 +247,8 @@ boxplot(marks,
 # Dot Chart
 # ==========================================
 
-marks <- c(65, 72, 80, 85, 90)
-names(marks) <- c("Amit", "Neha", "Rahul", "Priya", "Riya")
+marks <- c(68, 74, 82, 87, 93)
+names(marks) <- c("Farhan", "Yasmin", "Bob", "Zainab", "Alice")
 
 dotchart(marks,
          main = "Student Marks",
@@ -258,7 +258,7 @@ dotchart(marks,
 # Stem-and-Leaf Diagram
 # ==========================================
 
-marks <- c(45, 48, 52, 55, 56, 61, 65, 67, 72, 75, 78)
+marks <- c(44, 47, 53, 56, 58, 62, 64, 68, 71, 75, 81)
 
 stem(marks)
 
@@ -266,8 +266,8 @@ stem(marks)
 # Density Plot
 # ==========================================
 
-marks <- c(45, 50, 55, 60, 62, 65,
-           68, 70, 72, 75, 80, 85)
+marks <- c(46, 52, 54, 59, 63, 67,
+           69, 72, 74, 78, 83, 88)
 
 d <- density(marks)
 
@@ -320,7 +320,7 @@ filled.contour(x, y, z,
 # ==========================================
 
 hours <- c(1, 2, 3, 4, 5, 6, 7, 8)
-marks <- c(35, 40, 50, 55, 60, 68, 75, 82)
+marks <- c(36, 42, 48, 56, 62, 69, 76, 84)
 
 model <- lm(marks ~ hours)
 
@@ -344,7 +344,7 @@ abline(model)
 # ==========================================
 
 hours <- c(1, 2, 3, 4, 5, 6, 7, 8)
-marks <- c(35, 42, 50, 54, 63, 68, 76, 81)
+marks <- c(37, 43, 49, 56, 62, 70, 75, 83)
 
 weights <- c(1, 1, 2, 2, 3, 3, 4, 4)
 
@@ -372,8 +372,8 @@ abline(model)
 # ==========================================
 
 study_hours <- c(2, 3, 4, 5, 6, 7, 8, 9, 10, 11)
-attendance <- c(60, 65, 70, 72, 75, 78, 80, 85, 88, 90)
-marks <- c(45, 50, 55, 60, 65, 70, 74, 80, 84, 88)
+attendance <- c(62, 65, 69, 74, 76, 80, 82, 86, 89, 92)
+marks <- c(46, 51, 57, 62, 66, 71, 76, 81, 85, 90)
 
 data <- data.frame(
   study_hours,
@@ -405,9 +405,9 @@ print(prediction)
 library(glmnet)
 
 study_hours <- c(2, 3, 4, 5, 6, 7, 8, 9, 10, 11)
-attendance <- c(60, 65, 70, 72, 75, 78, 80, 85, 88, 90)
-assignment_score <- c(50, 55, 60, 62, 65, 70, 72, 78, 82, 85)
-marks <- c(42, 48, 54, 58, 64, 69, 74, 79, 85, 89)
+attendance <- c(62, 65, 69, 74, 76, 80, 82, 86, 89, 92)
+assignment_score <- c(52, 56, 59, 64, 67, 71, 74, 79, 83, 87)
+marks <- c(44, 49, 55, 60, 65, 71, 75, 81, 86, 91)
 
 X <- cbind(study_hours,
            attendance,
